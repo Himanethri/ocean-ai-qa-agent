@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Shop Checkout</title>
+    <style>
+        .error { color: red; }
+        .btn-pay { background-color: green; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+
+<body>
+
+    <h1>E-Shop Checkout</h1>
+
+    <h2>Products</h2>
+    <div>
+        <p>Item A - $20 <button id="add_a">Add to Cart</button></p>
+        <p>Item B - $35 <button id="add_b">Add to Cart</button></p>
+        <p>Item C - $10 <button id="add_c">Add to Cart</button></p>
+    </div>
+
+    <h2>Cart Summary</h2>
+    <div>
+        <p>Item A Quantity: <input id="qty_a" type="number" value="0"> </p>
+        <p>Item B Quantity: <input id="qty_b" type="number" value="0"> </p>
+        <p>Item C Quantity: <input id="qty_c" type="number" value="0"> </p>
+
+        <p>Discount Code: <input id="discount_code" type="text"></p>
+        <p>Total Price: <span id="total_price">0</span></p>
+    </div>
+
+    <h2>User Details</h2>
+    <form id="user_form">
+        <p>Name: <input id="name" type="text"></p>
+        <p class="error" id="err_name"></p>
+
+        <p>Email: <input id="email" type="text"></p>
+        <p class="error" id="err_email"></p>
+
+        <p>Address: <input id="address" type="text"></p>
+        <p class="error" id="err_address"></p>
+    </form>
+
+    <h2>Shipping</h2>
+    <p><input type="radio" name="shipping" value="standard" checked> Standard (Free)</p>
+    <p><input type="radio" name="shipping" value="express"> Express ($10)</p>
+
+    <h2>Payment Method</h2>
+    <p><input type="radio" name="payment" value="credit" checked> Credit Card</p>
+    <p><input type="radio" name="payment" value="paypal"> PayPal</p>
+
+    <button id="pay_now" class="btn-pay">Pay Now</button>
+
+    <h3 id="payment_message"></h3>
+
+</body>
+</html>

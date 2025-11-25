@@ -1,0 +1,7 @@
+UI/UX Guidelines for Checkout Page
+
+- All validation errors must appear in **red text**.
+- The "Pay Now" button must be **green** with white text.
+- Error messages must appear immediately when the field is invalid.
+- A success message "Payment Successful!" must appear when all inputs are valid.
+- Required fields: Name, Email, Address.
